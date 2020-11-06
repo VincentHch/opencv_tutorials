@@ -16,6 +16,7 @@ def generate_negative_description_file():
         for filename in os.listdir('negative'):
             f.write('negative/' + filename + '\n')
 
+generate_negative_description_file()
 # the opencv_annotation executable can be found in opencv/build/x64/vc15/bin
 # generate positive description file using:
 # $ C:/Users/Ben/learncodebygaming/opencv/build/x64/vc15/bin/opencv_annotation.exe --annotations=pos.txt --images=positive/
